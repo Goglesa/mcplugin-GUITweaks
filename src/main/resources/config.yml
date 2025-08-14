@@ -1,0 +1,166 @@
+
+# ================================================== #
+#                PunishGUI Configuration             #
+# ================================================== #
+
+# --- GUI Titles (Customize the name of each menu) ---
+titles:
+  type-select: "&4Select Punishment Duration"
+  duration-select-ban: "&4Select Ban Duration"
+  duration-select-mute: "&4Select Mute Duration"
+  duration-select-warn: "&4Select Warn Duration"
+  reason-select: "&4Select a Reason"
+  appeal-select: "&4Select Appeal Status"
+
+# --- Main Menu Items (First GUI) ---
+main-menu-items:
+  ban:
+    material: "DIAMOND_AXE"
+    name: "&c&lBan Player"
+    lore:
+      - "&7Permanently or temporarily"
+      - "&7remove a player from the server."
+  mute:
+    material: "BOOK"
+    name: "&e&lMute Player"
+    lore:
+      - "&7Permanently or temporarily"
+      - "&7restrict a player's chat."
+  warn:
+    material: "ANVIL"
+    name: "&6&lWarn Player"
+    lore:
+      - "&7Issue an official warning"
+      - "&7to a player."
+
+# --- Duration Type Menu Items (Second GUI) ---
+duration-type-items:
+  permanent:
+    material: "TNT"
+    name: "&4&lPermanent"
+    lore:
+      - "&7This punishment will not expire."
+  permanent-ip:
+    material: "TNT"
+    name: "&4&lPermanent IP-Ban"
+    lore:
+      - "&7This punishment will not expire"
+      - "&7and will block their IP address."
+  temporary:
+    material: "CLOCK"
+    name: "&6&lTemporary"
+    lore:
+      - "&7Select a specific duration"
+      - "&7for this punishment."
+
+# --- Preset Temporary Durations ---
+temporary-durations:
+  warn:
+    '1':
+      name: "&e7 Days"
+      duration: "7d"
+      material: "YELLOW_CONCRETE"
+    '2':
+      name: "&614 Days"
+      duration: "14d"
+      material: "ORANGE_CONCRETE"
+  mute:
+    '1':
+      name: "&a30 Minutes"
+      duration: "30m"
+      material: "LIME_CONCRETE"
+    '2':
+      name: "&e1 Hour"
+      duration: "1h"
+      material: "YELLOW_CONCRETE"
+    '3':
+      name: "&61 Day"
+      duration: "1d"
+      material: "ORANGE_CONCRETE"
+    '4':
+      name: "&c3 Days"
+      duration: "3d"
+      material: "RED_CONCRETE"
+    '5':
+      name: "&l&47 Days"
+      duration: "1w"
+      material: "BLACK_CONCRETE"
+  ban:
+    '1':
+      name: "&a1 Day"
+      duration: "1d"
+      material: "LIME_CONCRETE"
+    '2':
+      name: "&e3 Days"
+      duration: "3d"
+      material: "YELLOW_CONCRETE"
+    '3':
+      name: "&67 Days"
+      duration: "7d"
+      material: "ORANGE_CONCRETE"
+    '4':
+      name: "&c14 Days"
+      duration: "14d"
+      material: "RED_CONCRETE"
+    '5':
+      name: "&l&430 Days"
+      duration: "30d"
+      material: "BLACK_CONCRETE"
+
+
+# --- Custom Input Items ---
+custom-input-items:
+  duration:
+    material: "OAK_SIGN"
+    name: "&a&lCustom Duration"
+    lore:
+      - "&7Click to enter a custom"
+      - "&7duration in chat."
+  reason:
+    material: "OAK_SIGN"
+    name: "&a&lCustom Reason"
+    lore:
+      - "&7Click to enter a custom"
+      - "&7reason in chat."
+
+# --- Preset Reasons ---
+reasons:
+  - "&2Minor Spamming"
+  - "&2Disruptive Behavior"
+  - "&2Minor Griefing"
+  - "&2Mild Profanity"
+  - "&2Minor Exploit Usage"
+  - "&1Spamming (Moderate to Severe)"
+  - "&1Harassment/Insulting Players"
+  - "&1Toxicity/Swearing/Inappropriate Language"
+  - "&1Bypass Swear Fliter"
+  - "&1Advertising Other Servers"
+  - "&1Hate Speech/Discrimination/Racism"
+  - "&4Major Griefing"
+  - "&4Hacking/Cheating (e.g., Fly, )"
+  - "&4X-Ray"
+  - "&4Exploit Abuse (Duping, etc.)"
+  - "&4Severe Harassment/Discrimination/Hate Speech"
+  - "&4Ban Evading"
+  - "&4DDoS Threats/Server Attacks"
+  - "&4Inappropriate Sign/s"
+  - "&4Pedophilia"
+  - "&4Player Killing"
+  - "&4Lava Casting"
+  - "&4Stealing"
+  - "&4Pet Killing"
+# --- Final Appeal Menu ---
+appeal-items:
+  can-appeal:
+    material: "LIME_CONCRETE"
+    name: "&a&lMay Appeal"
+    message: "(Appealable)"
+  cannot-appeal:
+    material: "RED_CONCRETE"
+    name: "&c&lMay NOT Appeal"
+    message: "(Not Appealable)"
+
+# --- Chat Input Messages ---
+chat-prompts:
+  duration: "&ePlease enter the custom duration in chat now (e.g., 5d, 1h30m, 2w). Type 'cancel' to abort."
+  reason: "&ePlease enter the custom reason in chat now. Type 'cancel' to abort."

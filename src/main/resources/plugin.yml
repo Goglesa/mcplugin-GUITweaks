@@ -1,0 +1,11 @@
+name: GUITweaks
+main: com.gogless.GUITweaks
+version: ${version}
+api-version: '1.21'
+author: Gogless
+description: A custom punishment GUI system compatible with AdvancedBan.
+commands:
+  punish:
+    description: Opens the custom punishment GUI for a player.
+    usage: /<command> <player>
+    permission: GUITweaks.punish
